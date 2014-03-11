@@ -1,0 +1,28 @@
+Map { background-color: #706F6F; }
+
+#countries {
+  ::polygon { polygon-fill: #ffffff; }
+  ::line {
+    line-color: #ffffff;
+    line-width: 1;
+  }
+}
+
+#surveydatawithlocati { ::marker {
+  marker-allow-overlap: true;
+  marker-fill: #0988bb;
+    [What.type.of.organization.are.you.currently.working.for..="Non-Governmental Organization"]{marker-fill: 10px;}
+	[What.type.of.organization.are.you.currently.working.for..="Non-Governmental Organization"]{marker-fill: 10px;}
+  marker-line-color: #ffffff;
+  marker-allow-overlap: true;
+  marker-width: 8px;
+    [id=0]{marker-width: 10px;}
+    [id=0]{marker-width: 10px;}
+    [tornadoes &lt; 10]{marker-width:6;}
+    [tornadoes &gt;= 10][tornadoes &lt; 25]{marker-width:10;}
+    [tornadoes &gt;= 25][tornadoes &lt; 50]{marker-width:16;}
+    [tornadoes &gt;= 50][tornadoes &lt; 100]{marker-width:24;}
+    [tornadoes &gt;= 100]{marker-width:16;}
+
+  }
+}

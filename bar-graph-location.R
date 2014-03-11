@@ -3,8 +3,6 @@
 setwd("~/Documents/Programming/ocha-data-survey")
 
 library(ggplot2)
-require(grid)  # For using the 'unit' function. 
-
 
 # Bar graph with response groups. #
 ggplot(data, aes(reorder(data$What.type.of.organization.are.you.currently.working.for.., data$What.type.of.organization.are.you.currently.working.for.., function(x) length(x)))) + theme_bw() + 
@@ -16,5 +14,3 @@ ggplot(data, aes(reorder(data$What.type.of.organization.are.you.currently.workin
         axis.text.x = element_text(size = 12)
         ) + 
   scale_fill_discrete(name="Where are you located?") 
-
-  
