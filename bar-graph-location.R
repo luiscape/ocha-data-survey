@@ -13,4 +13,4 @@ ggplot(data, aes(reorder(data$What.type.of.organization.are.you.currently.workin
   theme(plot.title = element_text(vjust = 2, face = 'italic'), 
         axis.text.x = element_text(size = 12)
         ) + 
-  scale_fill_discrete(name="Where are you located?") 
+  
